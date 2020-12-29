@@ -19,7 +19,7 @@ egress {
 from_port = 3306
 to_port = 3306
 protocol = "tcp"
-cidr_blocks = ["${var.private_subnet_cidr}"]
+cidr_blocks = ["0.0.0.0/0"]
 }
 
 vpc_id = "${aws_vpc.default.id}"
